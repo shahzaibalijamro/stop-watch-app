@@ -1,6 +1,11 @@
 let hourHand = document.querySelector(".hour-hand");
 let minuteHand = document.querySelector(".minute-hand");
 let secondHand = document.querySelector(".second-hand");
+let startButton = document.querySelector(".start-but");
+let stopButton = document.querySelector(".stop-but");
+let resetButton = document.querySelector(".reset-but");
+stopButton.style.display = 'none';
+resetButton.style.display = 'none';
 let seconds = 0;
 let minutes = 0;
 let hours = 0;
@@ -20,6 +25,9 @@ let abc = setInterval(function () {
     }
 }, 10);
 function startWatch() {
+    startButton.style.display = 'none';
+    stopButton.style.display = 'inline';
+    resetButton.style.display = 'none';
     startInterval = setInterval(function () {
         seconds += 1;
         secondHand.innerHTML = seconds;
@@ -49,13 +57,25 @@ function startWatch() {
             hours += 1;
             hours.innerHTML = minutes;
         }
+        if (hours > 23) {
+            hours = 0;
+            hourHand.innerHTML = '00';
+        }
     }, 1000)
     // seconds += 1;
 }
 function stopWatch() {
+    startButton.innerHTML = 'Resume';
+    startButton.style.display = 'inline';
+    stopButton.style.display = 'none';
+    resetButton.style.display = 'inline';
     clearInterval(startInterval)
 }
 function resetWatch() {
+    startButton.innerHTML = 'Start';
+    startButton.style.display = 'inline';
+    stopButton.style.display = 'none';
+    resetButton.style.display = 'none';
     clearInterval(startInterval)
     seconds = 0;
     secondHand.innerHTML = 0;
