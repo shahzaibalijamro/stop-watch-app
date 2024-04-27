@@ -3,4 +3,47 @@ body{
     color: white;
     text-align: center;
     margin-top: 10%;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Kanit", sans-serif;
+}
+.start-but{
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    padding: 7px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+.stop-but{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 7px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+.reset-but{
+    color: white;
+    background-color: #ff8a00;
+    text-decoration: none;
+    padding: 7px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+.container{
+    padding: 0 10px;
+}
+.main-heading{
+    letter-spacing: 3px;
+    font-size: 35px;
+}
+.clock{
+    margin-bottom: 40px;
 }
