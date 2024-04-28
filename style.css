@@ -47,3 +47,50 @@ body{
 .clock{
     margin-bottom: 40px;
 }
+@media(max-width:1200px){
+    body{
+        margin-top: 15%;
+    }
+}
+@media(max-width:768px){
+    .main-heading{
+        letter-spacing: 2px;
+        font-size: 33px;
+    }
+    body{
+        margin-top: 20%;
+    }
+    .clock{
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .start-but{
+        padding: 7px 22px;
+        border-radius: 5px;
+        letter-spacing: 0.5px;
+    }
+    .main-heading{
+        margin-bottom: 0;
+    }
+    .stop-but{
+        color: white;
+        background-color: red;
+        text-decoration: none;
+        padding: 7px 22px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        letter-spacing: 1px;
+    }
+    .reset-but{
+        color: white;
+        background-color: #ff8a00;
+        text-decoration: none;
+        padding: 7px 22px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        letter-spacing: 1px;
+        margin-left: 5px;
+    }
+}
